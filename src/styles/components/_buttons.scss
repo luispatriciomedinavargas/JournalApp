@@ -1,39 +1,41 @@
-.btn{
+
+.btn {
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
     font-size: 12px;
     padding: 7px 10px 7px 10px;
-    
-    transition: color .3s ease  ;
 
+    transition: color .3s ease;
 
-    &:focus{
+    &:focus {
         outline: none;
     }
-    &:hover{
-        color: darken($color: white, $amount: 100);
+
+    &:hover {
+        color: darken($color: white, $amount: 10);
     }
-
-
+    
 }
-.btn-primary{
+
+
+.btn-primary {
     background-color: $primary;
     border-radius: 2px;
-
-    &:disabled{
+    
+    &:disabled {
         background-color: lighten($color: $primary, $amount: 15);
     }
-    &:hover{
+
+    &:hover { 
         background-color: darken($color: $primary, $amount: 15);
     }
 }
 
-.btn-block{
+.btn-block {
     width: 100%;
 }
-
 
 .google-btn {
     cursor: pointer;
@@ -64,10 +66,10 @@
     }
     .btn-text {
         float: right;
-        margin: 11px 40px 15px 0;
+        margin: 11px 40px 0 0;
         color: $white;
         font-size: 14px;
-        letter-spacing: 0.1px;
+        letter-spacing: 0.2px;
     }
     &:hover {
         box-shadow: 0 0 6px $google-blue;
@@ -76,3 +78,4 @@
         background: $button-active-blue;
     }
 }
+
